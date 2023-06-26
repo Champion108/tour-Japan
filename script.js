@@ -10,8 +10,9 @@ let colorIndex = 0;
 
 function changeColor() {
   gsap.to(element, {
+    delay:1,
     backgroundColor: colors[colorIndex],
-    duration: 3,
+    duration: 2,
     onComplete: () => {
       colorIndex = (colorIndex + 1) % 3;
       changeColor(); 
