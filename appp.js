@@ -81,6 +81,13 @@ left.addEventListener("click",()=>{
    slider.style.left = `${m+400}px`;
 })
 
+gsap.to(".head1 h1",{
+   duration:1.5,
+   left:0,
+   ease: Expo.easeInOut,
+   scrollTrigger:".head1",
+})
+
 gsap.to(".head h1",{
    duration:1.5,
    left:0,
@@ -88,19 +95,34 @@ gsap.to(".head h1",{
    scrollTrigger:".head",
 })
 
-gsap.to(".box .ver",{
+gsap.to("#snow .box .ver",{
    duration:1,
    top:0,
    ease: Expo.easeInOut,
-   scrollTrigger:".box",
+   scrollTrigger:"#snow .box",
 })
 
-gsap.to(".box .txt p",{
+gsap.to("#snow .box .txt p",{
    delay:1,
    duration:1.5,
    left:0,
    ease: Expo.easeInOut,
-   scrollTrigger:".box",
+   scrollTrigger:"#snow .box",
+})
+
+gsap.to("#osaka .box .ver",{
+   duration:1,
+   top:0,
+   ease: Expo.easeInOut,
+   scrollTrigger:"#osaka .box",
+})
+
+gsap.to("#osaka .box .txt p",{
+   delay:1,
+   duration:1.5,
+   left:0,
+   ease: Expo.easeInOut,
+   scrollTrigger:"#osaka .box",
 })
 
 gsap.to(".con .chat1 .txt p",{
@@ -146,6 +168,4 @@ gsap.to(".ver",{
    duration:2,
    stagger:2,
 })
-=======
-
-/* surprise element*/
+*/
